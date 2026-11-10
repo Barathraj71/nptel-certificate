@@ -4,43 +4,23 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="robots" content="noindex">
-  <title>Certificate Display</title>
+  <title>Certificate display copy</title>
   <style>
     * { box-sizing: border-box; }
-    body {
-      margin: 0;
-      padding: 24px 14px;
-      background: #f3f4f6;
-      color: #222;
-      font-family: Arial, Helvetica, sans-serif;
-      text-align: center;
-    }
-    main { width: min(1100px, 100%); margin: 0 auto; }
-    img {
-      display: block;
-      width: 100%;
-      height: auto;
-      background: white;
-      box-shadow: 0 5px 24px rgba(0,0,0,.12);
-    }
-    footer {
-      margin: 14px auto 0;
-      max-width: 820px;
-      color: #555;
-      font-size: 12px;
-      line-height: 1.5;
-    }
+    body { margin: 0; padding: 18px 12px; background: #f2f3f5; color: #202124; font-family: Arial, Helvetica, sans-serif; }
+    .notice { max-width: 1100px; margin: 0 auto 12px; padding: 10px 14px; background: #fff4d6; border: 1px solid #e4c66a; border-radius: 8px; font-size: 13px; line-height: 1.45; text-align: center; }
+    main { max-width: 1100px; margin: 0 auto; }
+    iframe { display: block; width: 100%; height: calc(100vh - 115px); min-height: 580px; border: 0; background: #fff; box-shadow: 0 4px 22px rgba(0,0,0,.12); }
+    .missing { background: white; padding: 28px; text-align: center; border-radius: 8px; }
     a { color: #174ea6; }
   </style>
 </head>
 <body>
+  <div class="notice"><strong>Personal certificate display copy.</strong> This page is not an NPTEL verification record. For authenticity, use the original NPTEL verification QR/code printed on the certificate.</div>
   <main>
-    <img src="./certificate-original.png" alt="Certificate display copy">
-    <footer>
-      Personal certificate display copy. This page is not an NPTEL verification record.
-      For official verification, use the QR code or verification details issued by NPTEL.
-      <a href="https://nptel.ac.in/" target="_blank" rel="noopener">NPTEL official website</a>.
-    </footer>
+    <iframe src="./certificate.pdf" title="Certificate PDF">
+      <div class="missing">Your browser cannot preview the PDF. <a href="./certificate.pdf">Open the certificate PDF</a>.</div>
+    </iframe>
   </main>
 </body>
 </html>
